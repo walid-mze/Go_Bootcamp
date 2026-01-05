@@ -4,9 +4,7 @@ import ("fmt"
 )
 func main(){
 	n := rand.Intn(100) 
-	var limit int 
-	fmt.Print("Eneter your  : ")
-	fmt.Scanf("%d",&guess)
+
 	var guess int
 	i:=0
 	for {
