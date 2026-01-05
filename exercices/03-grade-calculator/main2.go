@@ -2,9 +2,8 @@ package main
 
 import "fmt"
 
-func main(){
+func main2(){
 	var g1 int
-
 
 	i:=0
 	sum:=0
@@ -20,8 +19,7 @@ func main(){
 	}
 	avg:=(float64)(sum)/5
 	fmt.Println("the average grade is",avg)
-
-
+	
 	switch {
 	case avg>=90: fmt.Println("The letter is A")
 	case avg>=80: fmt.Println("The letter is B")
@@ -31,9 +29,6 @@ func main(){
 	default : 	fmt.Println("The letter is A")
 
 	}
-
-
-
 }
 
 
