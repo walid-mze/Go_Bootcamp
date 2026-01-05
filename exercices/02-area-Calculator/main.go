@@ -11,5 +11,5 @@ func calculateArea(length float64, width float64) float64 {
 func main() {
 	area := calculateArea(5.0, 3.0)
 	log.Println("Area in meters :", area)
-	log.Println("Area in foot :", area*3.28)
+	log.Println("Area in foot :", area*3.28*3.28)
 }
