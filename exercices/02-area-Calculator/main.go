@@ -4,7 +4,7 @@ import "log"
 
 func calculateArea(length float64, width float64) float64 {
 	if length < 0 || width < 0 {
-		log.Fatal("length and width must be positive values")
+		log.Println("length and width must be positive values")
 	}
 	return length * width
 }
