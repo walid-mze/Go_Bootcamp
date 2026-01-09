@@ -1,20 +1,23 @@
 package main
-import ("fmt"
-"math/rand"
+
+import (
+	"fmt"
+	"math/rand"
 )
+
 func main(){
 	var limit int 
 	fmt.Print("Enter the number of tries : ")
 	fmt.Scanf("%d\n",&limit)
 
 	var guess int
-	var bestScore int
+	bestScore := 0
 
 	play:='y'
 
 	for play=='y' {
 	var diff string
-	min:=1
+	min := 1
 	var max int 
 	fmt.Print("Enter the difficulty(easy,medium,hard): ")
 	fmt.Scanf("%s\n",&diff)
@@ -40,11 +43,11 @@ func main(){
 
 		}else if(guess==n){
 			fmt.Println("You win , correct guess ")
-			fmt.Println("you made ",i+1,"attempts")
-			win=1
-			if i+1>bestScore{
-				bestScore=i+1
-			}
+				fmt.Println("you made ",i+1,"attempts")
+				win=1
+				if bestScore == 0 || i+1 < bestScore{
+					bestScore=i+1
+				}
 
 			break
 		}else if guess<n{
